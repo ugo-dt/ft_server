@@ -6,7 +6,7 @@
 #    By: ugdaniel <ugdaniel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/03/18 14:52:48 by ugdaniel          #+#    #+#              #
-#    Updated: 2021/03/18 14:53:23 by ugdaniel         ###   ########.fr        #
+#    Updated: 2021/05/05 16:54:11 by ugdaniel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,6 @@ wget https://files.phpmyadmin.net/phpMyAdmin/4.9.7/phpMyAdmin-4.9.7-english.tar.
 tar xvf /tmp/phpMyAdmin-4.9.7-english.tar.gz -C /tmp
 mv /tmp/phpMyAdmin-4.9.7-english /var/www/ftserver/phpmyadmin
 rm -rf /tmp/phpMyAdmin.tar.gz
-mv /tmp/config.inc.php /var/www/ftserver/phpmyadmin
 
 service mysql start
 mysql -u root --skip-password -e "CREATE DATABASE wordpress;"
